@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <title>LOLI.IO | 萝莉关爱站</title>
+    <meta
+      name="description"
+      content="LOLI.IO - 为萝莉文化爱好者提供安全、友善、合法的周边与资讯。"
+    />
+    <meta
+      name="keywords"
+      content="loli care, 萝莉文化, ACG, 周边, 二次元, LOLI.IO"
+    />
+    <meta name="robots" content="index,follow" />
+
+    <link
+      rel="icon"
+      href="/.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <!-- 强制覆盖 Footer 高度限制，确保多行文字可见 -->
+    <style>
+      #footer {
+        height: auto !important;
+        line-height: 1.6em !important;
+        padding: 1em 2em !important;
+        z-index: 1000; /* 确保位于最前 */
+      }
+      #footer p { margin: 0.5em 0 !important; }
+      #footer .disclaimer { font-size: 0.9em; color: #aaa; }
+      #footer small { font-size: 0.85em; color: #ccc; }
+    </style>
+    <noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+	<script src="/cc.js"></script>
+
+
+    <!-- 处理 bfcache 返回的刷新 -->
+    <script>
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
+    </script>
+  </head>
+  <body class="is-preload">
+    <img width="0" src="static/picture/favicon.ico" alt="favicon" />
+    <div id="wrapper">
+      <div id="bg"></div>
+      <div id="overlay"></div>
+      <div id="main">
+        <!-- Header -->
+        <header id="header">
+          <h1>LOLI.IO</h1>
+          <p>萝莉文化 · 守护与共</p>
+		    <p style="max-width:600px;margin:0 auto;font-size:1em;line-height:1.6em;color:#ddd;">
+    LOLI.IO 是一个面向LOLI文化爱好者的友好社区，我们致力于分享合法、安全、健康的 ACG 内容，
+    让每一位热爱二次元文化的人都能在这里找到归属感与共鸣。
+  </p>
+          <p>
+            <a href="/" target="_blank">加入社区，一起守护萝莉文化</a>
+          </p>
+        </header>
+
+        <!-- Footer -->
+        <footer id="footer">
+  <script>
+    const nowYear = new Date().getFullYear();
+  </script>
+  <!-- 将所有信息放入同一 <p>，并用较小 line-height 保证 6em 区域内完整显示 -->
+  <p style="line-height:1.4em; margin:0;">
+    <b>
+      &copy;
+      <script>document.write(" "+ nowYear +" ");</script>
+      <a href="/" class="active">LOLI.IO</a>
+      <img width="20" height="auto" src="static/picture/ico64.png"/>
+      <a href="https://icp.gov.moe/?keyword=20251031" target="_blank">萌ICP备20251031号</a>
+    </b><br/> <p>
+    <span style="font-size:0.85em;">Powered by aLI He</span><br/>
+  </p>
+</footer>
+      </div>
+    </div>
+
+    <script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+    <script>
+      window.onload = function () {
+        document.body.classList.remove("is-preload");
+      };
+      window.ontouchmove = function () {
+        return false;
+      };
+      window.onorientationchange = function () {
+        document.body.scrollTop = 0;
+      };
+    </script>
+  </body>
+</html>
